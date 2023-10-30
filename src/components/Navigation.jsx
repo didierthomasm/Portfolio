@@ -12,7 +12,7 @@ const links = [
 const Navigation = memo(() => {
 
   const classType = {
-    active: 'text-rose-600 hover:text-rose-200 bg-gradient-to-r from-pink-100 to-transparent px-2 py-1 rounded-md font-semibold',
+    active: 'text-Cardinal hover:text-Bright-pink-crayola bg-gradient-to-r from-pink-100 to-transparent px-2 py-1 rounded-md font-semibold',
     pending: 'text-gray-600 hover:text-black'
   }
 
