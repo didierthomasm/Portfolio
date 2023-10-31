@@ -14,6 +14,7 @@ export default {
         'Orange-crayola': '#E17A40',
         Licorice: '#0F0108'
       },
+      cursor: {}
     },
   },
   plugins: [],
