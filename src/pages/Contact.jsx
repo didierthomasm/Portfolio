@@ -16,13 +16,13 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form data submitted:', formData);
-    // Here you can handle the submission (e.g., send the data to a server)
+
   };
 
   return (
     <div className="flex flex-col items-center justify-center pt-12 min-h-screen bg-gray-100">
       <div className="w-full max-w-xl p-6 m-4 bg-white rounded-lg shadow-md">
-        <h2 className="mb-4 text-2xl font-semibold text-center">Contact Us</h2>
+        <h2 className="mb-4 text-2xl font-semibold text-center">Contact Me</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold">Name</label>
