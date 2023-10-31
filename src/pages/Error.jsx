@@ -1,11 +1,8 @@
 import { useRouteError } from 'react-router-dom';
-import img1 from '../assets/img/404_1.jpg';
-import img2 from '../assets/img/404_2.jpg';
-import img3 from '../assets/img/404_3.jpg';
-import img4 from '../assets/img/404_4.jpg';
+import * as errors from '../assets/img/Erros/error.js';
 
-// Create an array of images
-const images = [img1, img2, img3, img4];
+// Array of images
+const images = [errors.img1, errors.img2, errors.img3, errors.img4];
 
 export default function ErrorPage() {
   const error = useRouteError();
