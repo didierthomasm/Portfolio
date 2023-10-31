@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +20,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center pt-12 min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center pt-12 min-h-screen bg-gray-100 mt-6">
       <div className="w-full max-w-xl p-6 m-4 bg-white rounded-lg shadow-md">
         <h2 className="mb-4 text-2xl font-semibold text-center">Contact Me</h2>
         <form onSubmit={handleSubmit}>
