@@ -1,4 +1,3 @@
-import {memo} from 'react';
 import {NavLink} from 'react-router-dom';
 
 const links = [
@@ -9,12 +8,12 @@ const links = [
   {path: '/Contact', label: 'Contact'}
 ];
 
-const Navigation = memo(() => {
+const classType = {
+  active: 'text-Cardinal hover:text-Bright-pink-crayola bg-gradient-to-r from-pink-100 to-transparent px-2 py-1 rounded-md font-semibold',
+  pending: 'text-gray-600 hover:text-black'
+}
 
-  const classType = {
-    active: 'text-Cardinal hover:text-Bright-pink-crayola bg-gradient-to-r from-pink-100 to-transparent px-2 py-1 rounded-md font-semibold',
-    pending: 'text-gray-600 hover:text-black'
-  }
+export function Navigation()  {
 
   return (
     <ul className="flex space-x-4 md:space-x-8">
@@ -24,12 +23,10 @@ const Navigation = memo(() => {
             to={link.path}
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? classType.active : ""
-          }>
+            }>
             {link.label}</NavLink>
         </li>
       ))}
     </ul>
   )
-});
-
-export default Navigation;
+}
