@@ -14,7 +14,13 @@ export default {
         'Orange-crayola': '#E17A40',
         Licorice: '#0F0108'
       },
-      cursor: {}
+      cursor: {},
+      flexGrow: {
+        '3': '3', // This adds a utility for 'flex-grow: 3;'
+      },
+      scale: {
+        '110': '1.50', // 10% larger
+      }
     },
   },
   plugins: [],
