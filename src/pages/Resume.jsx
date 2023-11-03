@@ -1,3 +1,4 @@
+import Didier_Resume from '../assets/pdf/Currículum.pdf'
 const educationData = [
   {
     period: '2010 - 2013',
@@ -37,6 +38,17 @@ const skills = {
 export default function Resume() {
   return (
     <main className="p-4 md:p-8 bg-white shadow-lg rounded-lg">
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">DOWNLOAD MY RESUME</h2>
+        <a
+          href={Didier_Resume}
+          download="DidierThomasMunoz_Resume.pdf"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Download Resume
+        </a>
+      </section>
+
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold mb-2">DIDIER THOMAS MUÑOZ</h1>
         <p>Monterrey, N.L., México</p>
