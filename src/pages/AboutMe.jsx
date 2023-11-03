@@ -1,9 +1,9 @@
 import me from '../assets/img/profile/profile.jpg'
 export default function AboutMe() {
   return (
-    <main className="flex flex-col md:mt-8 md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0 p-6 mt-24">
+    <main className="flex flex-col content-start md:mt-8 md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0 p-6 mt-24">
       {/* Profile Image */}
-      <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-full">
+      <div className="w-48 h-48 md:w-64 md:h-64 md:flex md:justify-start overflow-hidden rounded-full">
         <img src={me} alt="Didier Thomas Muñoz" className="w-full h-full object-cover"/>
       </div>
 
