@@ -48,7 +48,12 @@ export default function Contact() {
         email: '',
         message: ''
       }
-    )
+    );
+    setTouched({
+      name: false,
+      email: false,
+      message: false
+    });
   };
 
   const helloYou = () => {
