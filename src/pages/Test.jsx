@@ -60,21 +60,34 @@ export function Test() {
   return (
     <div className="flex w-96">
       {images.map((image, index) => (
+        // Wrap the two divs for each image in a parent div or a fragment
         <div
           key={image.src}
-          className={`h-96 w-96 flex-1 transition-all duration-700 ${
+          className={`h-96 w-96 flex-1 transition-all duration-700 relative ${
             hoveredImage === index ? 'custom-flex-grow' : ''
           }`}
           onMouseEnter={() => setHoveredImage(index)}
           onMouseLeave={() => setHoveredImage(null)}
           style={hoveredImage === index ? { flexGrow: 3 } : {}}
         >
-          <img src={image.src} alt={image.alt}
-               className='w-96 h-96 object-cover '/>
-
+          <img
+            src={image.src}
+            alt={image.alt}
+            className='w-96 h-96 object-cover'
+          />
+          {/* This div is now positioned relative to its parent */}
+          <div
+            className='absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center opacity-0 transition-opacity delay-150 ease-in hover:opacity-100'
+            style={{ display: hoveredImage === index ? 'flex' : 'none' }} // Show this div only when the item is hovered
+          >
+            <h2 className='text-white'>
+              <a href={image.href} target='_blank' rel='noopener noreferrer'>{image.alt}</a>
+            </h2>
+            <a href={image.hrefGithub}>
+              <img src={image.srcGif} alt={image.altGif} />
+            </a>
+          </div>
         </div>
-
-
       ))}
     </div>
   );
