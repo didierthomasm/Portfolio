@@ -3,6 +3,8 @@
 Welcome to my personal portfolio website showcasing my work in web development,
 including various projects and applications I've built.
 
+![Portfolio Website](./src/assets/img/Readme/cover.png)
+
 ## Table of Contents
 
 - [Overview](#overview)
